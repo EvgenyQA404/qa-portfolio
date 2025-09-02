@@ -1,4 +1,4 @@
-*Классы эквивалентности*
+##Классы эквивалентности
 
 TC-01 — Email валидные данные
 
@@ -19,6 +19,7 @@ Expected:
 Data: валидный пароль password_123
 
 Priority: High
+
 
 
 TC-02 — Email невалидные данные
@@ -42,6 +43,7 @@ Priority: High
 Data: валидный пароль password_123
 
 
+
 TC-03 — Password валидные данные
 
 Preconditions: страница логина открыта.
@@ -61,6 +63,7 @@ Expected:
 Priority: High
 
 Data: валидный email qa.user@example.com
+
 
 
 TC-04 — Password невалидные данные
@@ -84,7 +87,8 @@ Priority: High
 Data: валидный email qa.user@example.com
 
 
-*Граничные значения*
+
+##Граничные значения
 
 TC-05 — Password (5/6/64/65) (В одном кейсе 4 кейса для удобства)
 
@@ -109,6 +113,7 @@ Priority: High
 Data: валидный email qa.user@example.com
 
 
+
 TC-06 — Email длина (≈254 / >254) (в одном кейсе 2 кейса для удобства)
 
 Preconditions: страница логина открыта, подготовить два email: общая длина 254 и 255.
@@ -130,7 +135,8 @@ Expected:
 Priority: Medium
 
 
-*Проверка блокировки*
+
+##Проверка блокировки
 
 TC-07 — Блокировка после 5 неуспешных входов
 
@@ -154,6 +160,7 @@ Expected:
 Блокировка снята; вход успешен.
 
 Priority: High
+
 
 
 TC-08 — Выход из блокировки
